@@ -1,0 +1,47 @@
+.experiment {
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  color: #BBDEFB;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: black;
+}
+
+div.container {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#stage {
+  height: 100vh;
+}
+
+svg {
+  display: block;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.circleText {
+  fill: #666;
+  font-family: SequentialistBB, Arial, sans-serif;
+}
+
+.transitionBtn {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 2;
+    margin-top: 110px;
+    color: #BBDEFB;
+    border-radius: 80px;
+    background-color: #D1C4E9;
+}
