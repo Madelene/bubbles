@@ -46,3 +46,12 @@ svg {
     background-color: #D1C4E9;
     outline: none;
 }
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 50px; 
+    line-height: normal;
+    -webkit-border-radius: 60px;
+       -moz-border-radius: 60px;
+            border-radius: 60px;
+}
