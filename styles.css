@@ -4,6 +4,7 @@
   color: #BBDEFB;
   -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: black;
+  width: 50vw;
 }
 
 div.container {
@@ -19,6 +20,7 @@ div.container {
 
 #stage {
   height: 100vh;
+  width: 100vw;
 }
 
 svg {
@@ -31,8 +33,10 @@ svg {
 }
 
 .circleText {
-  fill: #666;
-  font-family: SequentialistBB, Arial, sans-serif;
+  fill: #fff;
+  font-family: SequentialistBB, Comic, sans-serif;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: black;
 }
 
 .transitionBtn {
@@ -51,8 +55,8 @@ svg {
     padding: 18px 28px;
     font-size: 35px; 
     line-height: normal;
-    -webkit-border-radius: 60px;
-       -moz-border-radius: 60px;
-            border-radius: 60px;
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px;
 }
 
