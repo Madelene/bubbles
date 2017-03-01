@@ -10,14 +10,15 @@ var curScale = 1;
 var centerX = $(window).width() / 2;
 var centerY = $(window).height() / 2;
 
-var mainTitle = "Isaac".toUpperCase().split(' ')
+var mainTitle = "blubeta".toUpperCase().split(' ')
 
 var titleA = "Antonio".toUpperCase().split(' ');
 var titleB = "Jerry".toUpperCase().split(' ');
 var titleC = "Maddie".toUpperCase().split(' ');
 var titleD = "Lorena".toUpperCase().split(' '); 
+var titleE = "Isaac".toUpperCase().split(' '); 
 
-var titles = [titleA,titleB,titleC,titleD];
+var titles = [titleA,titleB,titleC,titleD,titleE];
 
 var bubble = {id: 0, 
               title: "", 
@@ -43,14 +44,14 @@ var getData = function( freqNum ){
   
   freqNum = typeof freqNum === "undefined" ? 500 : freqNum; 
 
-   var totalBubbles = Math.floor( Math.random() * 4 ) + 1; 
+   var totalBubbles = Math.floor( Math.random() * 5 ) + 1; 
   
   _.times(totalBubbles, function(index){
 
     var subBubble = _.clone(bubble);
     subBubble.title = titles[index];
     subBubble.frequency = Math.floor(Math.random() * freqNum + 200);
-    subBubble.trend = Math.floor(Math.random() * 4) + 1; 
+    subBubble.trend = Math.floor(Math.random() * 7) + 1; 
     subBubble.x = 120 * (index + 1 ); 
     subBubble.id = index + 1; 
    
@@ -96,7 +97,7 @@ var getRadius = function( d ){
 }
 
 var getColor = function( trend ){
-  var colors = ["#D1C4E9", "#C5CAE9", "#BBDEFB", "#B2EBF2", "#B3E5FC"]; 
+  var colors = ["#3f9ce8","#BBDEFB", "#D1C4E9", "#C5CAE9", "#B2EBF2", "#B3E5FC", "#d8eacc", "#FFDDEC"]; 
   return colors[trend]; 
 }
 
@@ -144,7 +145,7 @@ var getTextStyle = function (d, textColor) {
 
 var getSubBubblePoint = function(d,index){
  
-  var angles = [-45, -140, -235, -320];
+  var angles = [-45, -120, -235, -320, -900];
   
   var mainBubbleRadius = bubbleData[0].radius;
   var centerPoint = {x: centerX, y: centerY};
