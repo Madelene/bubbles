@@ -97,7 +97,7 @@ var getRadius = function( d ){
 }
 
 var getColor = function( trend ){
-  var colors = ["#3f9ce8","#BBDEFB", "#D1C4E9", "#C5CAE9", "#B2EBF2", "#B3E5FC", "#d8eacc", "#FFDDEC"]; 
+  var colors = ["#3f9ce8","#BBDEFB", "#D1C4E9", "#C5CAE9", "#B2EBF2", "#B3E5FC", "#bce5bc", "#FFDDEC"]; 
   return colors[trend]; 
 }
 
