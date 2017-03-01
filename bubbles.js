@@ -109,7 +109,7 @@ var getEase = function(){
 var getTextStyle = function (d, textColor) {
   var that = this;
   var magicNum = 1.7; // trial and error - there's a probably a proper algorithm for this but I obviously don't know it but this works
-  var textColor = (undefined !== textColor) ? textColor : "#000";
+  var textColor = (undefined !== textColor) ? textColor : "#fff";
 
   //var bubbleRadius = (null !== selRadius ) ? ( selRadius + 20 ) : d.radius; 
   var longestStrNum = _.max( d.title, function(name){ return name.length; }).length; 
